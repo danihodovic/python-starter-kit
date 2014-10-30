@@ -40,7 +40,7 @@ def post_to_server(command):
 
     # Hopefully, our server will always be able to handle your requests
     # but you never know...
-    if reply.status_code != requests.codes.ok:
+    if reply.status_code != requests.codes['ok']:
         print('Error! We seem to have trouble talking to the server...\n')
         print('  The server replied with status code %d' % reply.status_code)
 
